@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Список дел</title>
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<main class="container clearfix">
+		<h1 class="visually-hidden">Список дел</h1>
+
+		<section class="left">
+			<h2 class="heading">Список дел:</h2>
+
+			<p class="work-none js-work-none">Список пуст...</p>
+			
+			<ul class="work-list js-work-list"></ul>
+		</section>
+
+		<section class="right">
+			<h2 class="heading">Добавить новое дело</h2>
+
+			<form class="form-add-work js-form-add-work" method="post">
+				<label class="label-add-work">* Название
+					<input class="title js-title" name="title" type="text" size="50" required>
+				</label>
+
+				<label class="label-add-work">* Описание
+					<textarea class="description js-description" name="description" maxlength="1000" required></textarea>
+				</label>
+
+				<button class="button-add-work" type="submit">Добавить дело</button>
+			</form>
+		</section>
+	</main>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
